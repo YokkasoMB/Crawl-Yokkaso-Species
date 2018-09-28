@@ -55,6 +55,24 @@ static const map<species_type, species_def> species_data =
       SK_BOWS, SK_CROSSBOWS, SK_SLINGS },
 } },
 
+{ SP_YOKKASO, {
+    "Yo",
+    "Yokkaso", "Yokkasan", "Tree Spirit",
+    SPF_NONE,
+    -1, 0, 0, 5,
+    MONS_GNOLL,
+    HT_LAND, US_ALIVE, SIZE_MEDIUM,
+    10, 7, 5, // 22
+    { STAT_STR, STAT_INT }, 4,
+    {{ MUT_STURDY_FRAME, 1, 1 }, { MUT_STURDY_FRAME, 1, 8 }, },
+    { "You cast some spells for free while relatively healthy, increasing proportionally with your health.", },
+    { "ambient casting"},
+    { JOB_WIZARD, JOB_WANDERER, JOB_WARPER, JOB_SKALD, JOB_ICE_ELEMENTALIST, JOB_AIR_ELEMENTALIST, JOB_EARTH_ELEMENTALIST,
+      JOB_NECROMANCER },
+    { SK_MACES_FLAILS, SK_STAVES,
+       SK_SLINGS },
+} },
+
 { SP_CENTAUR, {
     "Ce",
     "Centaur", nullptr, nullptr,

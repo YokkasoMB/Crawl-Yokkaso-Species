@@ -790,6 +790,10 @@ bool cast_a_spell(bool check_range, spell_type spell)
         }
     }
 
+    int proportional = (((you.hp * 100) / you.hp_max) - 50) * 1.3;
+
+    if (you.species == SP_YOKKASO && proportional > random2(100)) inc_mp(cost);
+
     if (check_range && spell_no_hostile_in_range(spell))
     {
         // Abort if there are no hostiles within range, but flash the range

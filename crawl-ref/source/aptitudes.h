@@ -50,6 +50,45 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_HUMAN,           SK_INVOCATIONS,     1),
     APT(SP_HUMAN,           SK_EVOCATIONS,      0),
 
+// SP_YOKKASO
+    APT(SP_YOKKASO,           SK_FIGHTING,        1),
+    APT(SP_YOKKASO,           SK_SHORT_BLADES,    -3),
+    APT(SP_YOKKASO,           SK_LONG_BLADES,     -3),
+    APT(SP_YOKKASO,           SK_AXES,            -4),
+    APT(SP_YOKKASO,           SK_MACES_FLAILS,    -1),
+    APT(SP_YOKKASO,           SK_POLEARMS,        -3),
+    APT(SP_YOKKASO,           SK_STAVES,          0),
+    APT(SP_YOKKASO,           SK_SLINGS,          -3),
+    APT(SP_YOKKASO,           SK_BOWS,            -3),
+    APT(SP_YOKKASO,           SK_CROSSBOWS,       -3),
+    APT(SP_YOKKASO,           SK_THROWING,        -2),
+    APT(SP_YOKKASO,           SK_ARMOUR,          +1),
+    APT(SP_YOKKASO,           SK_DODGING,         -2),
+    APT(SP_YOKKASO,           SK_STEALTH,         -2),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_YOKKASO,           SK_STABBING,      UNUSABLE_SKILL),
+#endif
+    APT(SP_YOKKASO,           SK_SHIELDS,         0),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_YOKKASO,           SK_TRAPS,         UNUSABLE_SKILL),
+#endif
+    APT(SP_YOKKASO,           SK_UNARMED_COMBAT,  -2),
+    APT(SP_YOKKASO,           SK_SPELLCASTING,   +1),
+    APT(SP_YOKKASO,           SK_CONJURATIONS,    +2),
+    APT(SP_YOKKASO,           SK_HEXES,           -1),
+    APT(SP_YOKKASO,           SK_CHARMS,          +1),
+    APT(SP_YOKKASO,           SK_SUMMONINGS,      -1),
+    APT(SP_YOKKASO,           SK_NECROMANCY,      +1),
+    APT(SP_YOKKASO,           SK_TRANSLOCATIONS,  0),
+    APT(SP_YOKKASO,           SK_TRANSMUTATIONS,  -1),
+    APT(SP_YOKKASO,           SK_FIRE_MAGIC,      -1),
+    APT(SP_YOKKASO,           SK_ICE_MAGIC,       +1),
+    APT(SP_YOKKASO,           SK_AIR_MAGIC,       +1),
+    APT(SP_YOKKASO,           SK_EARTH_MAGIC,     +1),
+    APT(SP_YOKKASO,           SK_POISON_MAGIC,    0),
+    APT(SP_YOKKASO,           SK_INVOCATIONS,     -2),
+    APT(SP_YOKKASO,           SK_EVOCATIONS,      -3),
+
 #if TAG_MAJOR_VERSION == 34
     // SP_HIGH_ELF
     APT(SP_HIGH_ELF,        SK_FIGHTING,        0),
